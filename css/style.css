@@ -1,0 +1,330 @@
+/* jangan di ubah */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Montserrat:wght@100;200;300;400;500;600;700;900&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@font-face {
+    font-family: 'Material Symbols Outlined';
+    src: url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0') format('woff2');
+}
+
+
+
+*, html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    background-color: #4c4c4c;
+    height: 100vh;
+}
+
+.container header{
+    margin-left:25px;
+    color: #eee;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 5px 0;
+}
+
+.kotak{
+    height: 80vh;
+    background-color: #F3F3F3;
+    display: flex;
+    gap: 10px;
+
+}
+
+.kiri{
+    display: flex;
+    flex-direction: column;
+}
+
+.kiri button{
+    margin: 0.5em 10px 0.5em 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: bold;
+    color: #eee;
+    background-color: #727272;
+    outline: none;
+    border: none;
+}
+
+.satu{
+    margin: 0.5em 10px 0.5em 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #727272;
+    border: none;
+    color: #eee;
+    font-weight: bold;
+    font-size: 13px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.satu option{
+    padding: 10px;
+    background-color: #eee;
+    color: #393939;
+}
+
+.dua{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.belanja{
+    margin-left: 5px;
+    height: 60vh;
+    border: 1px solid #ccc;
+    width: 390px;
+    overflow-y: scroll;
+    padding: 5px;
+    
+}
+
+.belanja .barang{
+    margin-bottom: 3px;
+    border: 1px solid #393939;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.barang .normal{
+    font-size: smaller;
+}
+
+.barang img{
+    max-width: 20px;
+}
+
+.barang button{
+    padding: 0;
+    background-color: transparent;
+    color: #393939;
+    cursor: pointer;
+    transition: transform ease-in-out 0.3;
+    box-shadow: 1px;
+}
+
+.barang button:hover{
+    color: rgb(205, 33, 33);
+    transform: scale(1.1);
+    box-shadow: 2px;
+}
+
+.barang button span{
+    font-size: 30px;
+}
+
+.jajan{
+    padding: 2em 1em 0 1em;
+    color: #393939;
+    font-size: 12px;
+    background-color: #eee;
+    margin: 6px;
+    width: 100%;
+}
+
+.pay{
+    font-size: 12px;
+    background-color: #727272;
+    padding: 4px;
+    color: #eee !important;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 3px;
+}
+
+.kanan{
+    width: 1200px;
+    margin-right: 5px;
+}
+
+.kanan nav{
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    background-color: #eee;
+    align-items: center;
+}
+
+.kanan nav .nav_kanan span{
+    font-size: 27px;
+    color: #4c4c4c;;
+}
+
+.kanan nav .nav_kanan{
+    display: flex;
+    align-items: center;
+}
+
+.kanan nav .nav_kanan input{
+    padding: 5px
+}
+
+#sortByName, #searchIcon{
+    cursor: pointer;
+    position: relative;
+    padding-bottom: -2px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    color: #4c4c4c;;
+}
+
+#sortByName:hover,  #searchIcon:hover{
+    border-bottom: 1px solid #4c4c4c;
+}
+
+.kanan section{
+    border: 1px solid #aaa;
+    height: 72vh;
+    overflow-y: scroll;
+}
+
+.kanan section .isi .foto img{
+    width: 85%;
+    margin: 5px;
+    height: 10vh;
+    border: 1px solid #bbb;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+.kanan section .isi{
+    margin: 5px;
+    border: 2px solid #aaa;
+    width: 130px;
+    height: 140px;
+    text-align: center;
+    float: left;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.1s ease-in-out;
+    border-radius: 15px;
+}
+
+.kanan section .isi:hover{
+    transform: translateY(-5px);
+}
+
+.kanan section .isi p{
+    font-size: 12px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-family: Georgia, 'Merriweather', Times, serif;
+    color: rgb(77, 71, 71);
+}
+
+.kanan section .isi h1{
+    font-size: 15px;
+    width: 100%;
+    border-top: 1px solid #aaa;
+    padding-top: 2px;
+    font-family: 'Times New Roman', serif;
+    color: #727272;
+}
+
+.checkout {
+    color: #eee;
+    font-weight: bold;
+    align-items: center;
+}
+
+
+
+.payment{
+    height: 8vh;
+    background-color: #eee;
+    position: relative;
+}
+
+.payment button{
+    position: absolute;
+    right: 20px;
+    padding: 10px 2%;
+    gap: 10px;
+    outline: none;
+    border: none;
+    background-color: #727272;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.container footer{
+    color: #eee;
+    padding-left: 10px;
+    padding-top: 5px;
+    font-size: small;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #4c4c4c;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+html::-webkit-scrollbar{
+    display: none;
+}
+
+section::-webkit-scrollbar{
+    display: none;
+}
+
+@media print {
+    body {
+      visibility: hidden;
+    }
+    #section-to-print {
+      visibility: visible;
+      position: relative;
+      left: 0;
+      top: 0;
+      background-color: #e8effe00;
+    }
+  }

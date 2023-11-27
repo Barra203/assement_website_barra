@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbhak</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Starbhak Mart</h1>
+        </header>
+        <div class="kotak">
+            <div class="kiri" id="section-to-print">
+
+                <select class="satu">
+                    <option hidden>Pilih Jenis Pemesanan</option>
+                    <option>Take Away</option>
+                    <option>Delivery</option>
+                </select>
+                <button class="dua"><span class="material-symbols-outlined"
+                        style="color: #393939 !important; font-size: 21px; ">
+                    </span>Starbhak Mart</button>
+                <div class="belanja">
+                    <div class="barang" style="display: none;">
+                        <div class="detail-kiri">
+                            <p id="nama-barang" style="font-size: small; font-weight: 500;"></p>
+                            <p id="harga-satuan" style="text-align: right; font-size: small;"></p>
+                        </div>
+                        <div class="detail-kanan">
+                            <p class="normal">Unit Price : <span id="harga-banyak"></span></p>
+                            <p class="normal" style="display: flex; justify-content: space-between; gap: 4em;">Quantity : <span class="stock"
+                                    id="stok-${itemName}"></span></p>
+                        </div>
+                        <button id="remove">
+                            <span class="material-symbols-outlined-1" style="color: #404040 !important; font-size: 16px;" id="hapus">
+                                delete
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="jajan" id="section-to-print">
+                    <p>Discount : </p>
+                    <p id="totalPrice" style="display: none;"></p>
+                    <p style="display: flex; justify-content: space-between;">Tax : <span id="taxDiscount">0</span></p>
+                    <div class="pay">
+                        <p>Total Amount : </p>
+                        <p id="totalAmount">0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="kanan">
+                <nav>
+                    <div class="nav_kiri">
+                        <p>Menu</p>
+                    </div>
+                    <div class="nav_kanan">
+                        <div class="cari">
+                            <span class="material-symbols-outlined" id="searchIcon">
+                                search
+                            </span>
+                            <input type="text" id="searchInput" placeholder="search" style="display: none;">
+                        </div>
+
+                        <span class="material-symbols-outlined">
+                            more_vert
+                        </span>
+                        <span class="material-symbols-outlined" id="cartIcon">
+                            shopping_cart
+                        </span>
+
+                        <span class="material-symbols-outlined" id="sortByName">
+                            swap_vert
+                        </span>
+                    </div>
+                </nav>
+                <section>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="https://nibble-images.b-cdn.net/nibble/original_images/indomie_kuah_terenak_9ab9848824_OcT_dnOO-.jpg" alt="">
+                        </div>
+                        <p>Mie Rebus</p>
+                        <h1>Rp. 13.000</h1>
+                    </div>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="https://www.warisankuliner.com/gfx/recipes/temp_thumb-1573122909.jpg" alt="">
+                        </div>
+                        <p>Nasi Goreng</p>
+                        <h1>Rp. 11.000</h1>
+                    </div>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="https://foto.kontan.co.id/fK0tB6q7WYlQhwdnPg7_ocKlYTg=/smart/filters:format(webp)/2023/09/28/502358134p.jpg" alt="">
+                        </div>
+                        <p>Pecel Lele</p>
+                        <h1>Rp. 16.000</h1>
+                    </div>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="https://asset.kompas.com/crops/AXlEeTnE0bnBHsmoByYpY3I35b0=/0x48:1000x715/750x500/data/photo/2020/09/06/5f54c3ebb1d41.jpg" alt="">
+                        </div>
+                        <p>Batagor</p>
+                        <h1>Rp. 15.000</h1>
+                    </div>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7qTI6Fgn4mvQBLGe4zY6bPYzhg63Ty6woWQ&usqp=CAU" alt="">
+                        </div>
+                        <p>Bakwan</p>
+                        <h1>Rp. 2.000</h1>
+                    </div>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="https://cdn0-production-images-kly.akamaized.net/T0JDAkA0wO0q6Bos_SGbSKfazmU=/800x1066/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4101378/original/077840000_1658820480-ikhsan-baihaqi-pbc2wXbQYpI-unsplash.jpg" alt="">
+                        </div>
+                        <p>Mie Goreng</p>
+                        <h1>Rp. 15.000</h1>
+                    </div>
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/indizone/2019/11/16/3esAyR/t_5dcfc25c005b6.jpg" alt="">
+                        </div>
+                        <p>Tempe Goreng</p>
+                        <h1>Rp. 2.000</h1>
+                    </div>
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="https://i.ytimg.com/vi/y8w9odOFlQs/maxresdefault.jpg" alt="">
+                        </div>
+                        <p>Pecel Ayam</p>
+                        <h1>Rp. 15.000</h1>
+                    </div>
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="https://asset.kompas.com/crops/4aqOaU_1HDJzJZDlhtm1mFQFmSM=/0x0:698x465/750x500/data/photo/2021/01/08/5ff86f55cf2e4.jpg" alt="">
+                        </div>
+                        <p>Bakso</p>
+                        <h1>Rp. 25.000</h1>
+                    </div>
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/2021/12/04/3790466383.jpg" alt="">
+                        </div>
+                        <p>Dimsum</p>
+                        <h1>Rp. 20.000</h1>
+                    </div>
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="https://images.tokopedia.net/img/KRMmCm/2022/8/12/21a9ad66-ad10-44ae-9cbc-919bbffab012.jpg" alt="">
+                        </div>
+                        <p>Corndog</p>
+                        <h1>Rp. 10.000</h1>
+                    </div>
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbHovlP1WzZHCM0w9cnReVBKy-onGJBXeEP2iT0yw0Z1mZUIzEBM0cP2iIMps_OshMg2c&usqp=CAU" alt="">
+                        </div>
+                        <p>Siomay</p>
+                        <h1>Rp. 15.000</h1>
+                    </div>
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="https://iro.nusaputra.ac.id/wp-content/uploads/2017/11/resep-martabak-manis.jpg" alt="">
+                        </div>
+                        <p>Martabak Manis</p>
+                        <h1>Rp. 30.000</h1>
+                    </div>
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="https://asset-2.tstatic.net/aceh/foto/bank/images/martabak-Telur-Roti-Tawar.jpg" alt="">
+                        </div>
+                        <p>Martabak Telor</p>
+                        <h1>Rp. 35.000</h1>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+        <div class="payment">
+            <Button id="bayar">
+                <span class="material-symbols-outlined" style="color: #eee !important;  font-size: 21px;">
+                    shopping_cart
+                </span>
+                <span>
+                    <p class="checkout">Checkout</p>
+                </span>
+            </Button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/cari.js"></script>
+    <script src="js/sort.js"></script>
+    <script src="js/print.js"></script>
+</body>
+
+</html>

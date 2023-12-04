@@ -1,10 +1,23 @@
-$(document).ready(function() {
+$(document).ready(function () {
     let ascending = true;
 
-    $('#sortByName').on('click', function() {
-        var items = $('.isi').detach();
+    function toggleNotFoundMessage() {
+        var $section = $('.kanan > section');
+        var $notFoundMessage = $('#notFoundMessage');
 
-        items.sort(function(a, b) {
+        if ($section.children('.isi:visible').length === 0) {
+            $notFoundMessage.show();
+        } else {
+            $notFoundMessage.hide();
+        }
+    }
+
+    toggleNotFoundMessage();
+
+    $('#sortByName').on('click', function () {
+        var items = $('.isi:visible').detach();
+
+        items.sort(function (a, b) {
             var nameA = $(a).find('p').text().toUpperCase();
             var nameB = $(b).find('p').text().toUpperCase();
 
@@ -13,6 +26,11 @@ $(document).ready(function() {
 
         ascending = !ascending;
 
-        $('.kanan > section').html(items);
+        var $section = $('.kanan > section');
+        $section.append(items);
+
+        toggleNotFoundMessage();
     });
+
+    $('#sortByName').trigger('click');
 });

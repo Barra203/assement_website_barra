@@ -116,3 +116,5 @@ $(document).ready(function () {
         }
     });
 });
+
+console.log('Created by Muhammad Barra Asy Syuhada XI PPLG 2.');

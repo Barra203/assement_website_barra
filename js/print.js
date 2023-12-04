@@ -4,13 +4,26 @@ $(document).ready(function() {
         var kiriID = $("#kiri").attr("id");
         console.log("ID kiri:", kiriID);
 
-        window.print();
+        // memunculkan alert sebelum ctrl + p
+        showAlertBeforePrint();
     });
 
     $(document).keydown(function(event) {
         if (event.ctrlKey && event.key === 'p') {
             event.preventDefault();
-            window.print();
+            
+            // memunculkan alert sebelum ctrl + p
+            showAlertBeforePrint();
         }
     });
+
+    // Function untuk memunculkan alert
+    function showAlertBeforePrint() {
+        // untuk pop up alert
+        var confirmation = confirm("Sudah yakin dengan pesanan anda?");
+
+        if (confirmation) {
+            window.print();
+        }
+    }
 });
